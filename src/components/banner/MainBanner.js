@@ -3,6 +3,8 @@ import { fontSize } from '@mui/system';
 import React from 'react'
 import { Trans, useTranslation } from 'react-i18next';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Img1 from '../../assets/image/hamber1.svg'
+import Img2 from '../../assets/image/hamber2.svg'
 
 function MainBanner({ setIsPersian, isPersian }) {
 
@@ -23,10 +25,16 @@ function MainBanner({ setIsPersian, isPersian }) {
     }
 
     return (
-        <div className="mt-20" style={{ direction: isPersian ? "rtl" : "ltr" }}>
+        <div className="mt-14" style={{ direction: isPersian ? "rtl" : "ltr" }}>
             <main className="text-center">
-                <h1 className="text-2xl sm:text-4xl">{t("description")}</h1>
-                <Button style={{ marginTop: '42px', width: '200px', fontSize: isPersian && "22px" }} variant="contained" color="error">{t("textButton")}<NavigateNextIcon className="ml-2 text-2xl" /></Button>
+                <h1 className="text-4xl sm:text-5xl">{t("description")}</h1>
+                <p className="my-12  text-lg sm:text-xl">{t("description2")}</p>
+                <Button style={{ marginTop: '10px', width: '240px', fontSize: isPersian && "22px" }} variant="contained" color="error">{t("textButton")}<NavigateNextIcon className="ml-2 text-2xl" /></Button>
+
+                <div className=" justify-evenly mt-2  flex-wrap hidden sm:flex">
+                    <img src={Img1} className="w-48" />
+                    <img src={Img2} className="w-80 bg" />
+                </div>
             </main>
         </div>
     )

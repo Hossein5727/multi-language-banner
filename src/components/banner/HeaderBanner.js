@@ -4,8 +4,7 @@ import LanguageIcon from '@mui/icons-material/Language';
 import Badge from '@mui/material/Badge';
 import { Trans, useTranslation } from 'react-i18next';
 import { Button, Fab, Switch } from '@mui/material';
-
-const imageSrc = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVuM2ylUUSTIMssX13Tst5HTCjloBLezt6cw4hr4pa2eQcMszfGwMUqI2XN-H46BbLqXM&usqp=CAU"
+import ImageSrc from '../../assets/image/logo.svg'
 
 function HeaderBanner({ setIsPersian, isPersian }) {
 
@@ -45,7 +44,7 @@ function HeaderBanner({ setIsPersian, isPersian }) {
                     <p className="m-2 text-2xl">{t("header.login")}</p>
                     <p className="text-2xl m-2">{t("header.servics")}</p>
                 </div>
-                <img src={imageSrc} className="w-24 h-24 object-cover rounded-xl hidden sm:block" />
+                <img src={ImageSrc} className="w-24 h-24 object-cover bg-gray-600 rounded-xl hidden sm:block" />
                 <div className="flex p-2">
                     <p className="m-2 text-2xl">{t("header.products")}</p>
                     <p className="text-2xl m-2">{t("header.home")}</p>
