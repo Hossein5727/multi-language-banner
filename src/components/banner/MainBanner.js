@@ -25,7 +25,7 @@ function MainBanner({ setIsPersian, isPersian }) {
     return (
         <div className="mt-20" style={{ direction: isPersian ? "rtl" : "ltr" }}>
             <main className="text-center">
-                <h1 className="text-4xl">{t("description")}</h1>
+                <h1 className="text-2xl sm:text-4xl">{t("description")}</h1>
                 <Button style={{ marginTop: '42px', width: '200px', fontSize: isPersian && "22px" }} variant="contained" color="error">{t("textButton")}<NavigateNextIcon className="ml-2 text-2xl" /></Button>
             </main>
         </div>

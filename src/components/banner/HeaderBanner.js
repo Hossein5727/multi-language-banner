@@ -45,7 +45,7 @@ function HeaderBanner({ setIsPersian, isPersian }) {
                     <p className="m-2 text-2xl">{t("header.login")}</p>
                     <p className="text-2xl m-2">{t("header.servics")}</p>
                 </div>
-                <img src={imageSrc} className="w-24 h-24 object-cover rounded-xl " />
+                <img src={imageSrc} className="w-24 h-24 object-cover rounded-xl hidden sm:block" />
                 <div className="flex p-2">
                     <p className="m-2 text-2xl">{t("header.products")}</p>
                     <p className="text-2xl m-2">{t("header.home")}</p>
