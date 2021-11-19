@@ -37,9 +37,6 @@ function HeaderBanner({ setIsPersian, isPersian }) {
                         <Switch onChange={handleChange} />
                         <Fab color="primary" size="small">FA</Fab>
                     </div>
-                    {/* <Badge badgeContent={3} color="error" className="m-2">
-                        <ShoppingCartIcon fontSize="medium" />
-                    </Badge> */}
                 </div>
             </div>
 
